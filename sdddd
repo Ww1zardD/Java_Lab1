@@ -1,0 +1,991 @@
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mindex f68d109..524f096 100644[m
+[1m--- a/.gitignore[m
+[1m+++ b/.gitignore[m
+[36m@@ -1,29 +1,24 @@[m
+[31m-### IntelliJ IDEA ###[m
+[31m-out/[m
+[31m-!**/src/main/**/out/[m
+[31m-!**/src/test/**/out/[m
+[32m+[m[32m# Compiled class file[m
+[32m+[m[32m*.class[m
+ [m
+[31m-### Eclipse ###[m
+[31m-.apt_generated[m
+[31m-.classpath[m
+[31m-.factorypath[m
+[31m-.project[m
+[31m-.settings[m
+[31m-.springBeans[m
+[31m-.sts4-cache[m
+[31m-bin/[m
+[31m-!**/src/main/**/bin/[m
+[31m-!**/src/test/**/bin/[m
+[32m+[m[32m# Log file[m
+[32m+[m[32m*.log[m
+ [m
+[31m-### NetBeans ###[m
+[31m-/nbproject/private/[m
+[31m-/nbbuild/[m
+[31m-/dist/[m
+[31m-/nbdist/[m
+[31m-/.nb-gradle/[m
+[32m+[m[32m# BlueJ files[m
+[32m+[m[32m*.ctxt[m
+ [m
+[31m-### VS Code ###[m
+[31m-.vscode/[m
+[32m+[m[32m# Mobile Tools for Java (J2ME)[m
+[32m+[m[32m.mtj.tmp/[m
+ [m
+[31m-### Mac OS ###[m
+[31m-.DS_Store[m
+\ No newline at end of file[m
+[32m+[m[32m# Package Files #[m
+[32m+[m[32m*.jar[m
+[32m+[m[32m*.war[m
+[32m+[m[32m*.nar[m
+[32m+[m[32m*.ear[m
+[32m+[m[32m*.zip[m
+[32m+[m[32m*.tar.gz[m
+[32m+[m[32m*.rar[m
+[32m+[m
+[32m+[m[32m# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml[m
+[32m+[m[32mhs_err_pid*[m
+[32m+[m[32mreplay_pid*[m
+[1mdiff --git a/.idea/.gitignore b/.idea/.gitignore[m
+[1mdeleted file mode 100644[m
+[1mindex 26d3352..0000000[m
+[1m--- a/.idea/.gitignore[m
+[1m+++ /dev/null[m
+[36m@@ -1,3 +0,0 @@[m
+[31m-# Default ignored files[m
+[31m-/shelf/[m
+[31m-/workspace.xml[m
+[1mdiff --git a/.idea/dictionaries/project.xml b/.idea/dictionaries/project.xml[m
+[1mdeleted file mode 100644[m
+[1mindex 4536f20..0000000[m
+[1m--- a/.idea/dictionaries/project.xml[m
+[1m+++ /dev/null[m
+[36m@@ -1,7 +0,0 @@[m
+[31m-<component name="ProjectDictionaryState">[m
+[31m-  <dictionary name="project">[m
+[31m-    <words>[m
+[31m-      <w>nums</w>[m
+[31m-    </words>[m
+[31m-  </dictionary>[m
+[31m-</component>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/misc.xml b/.idea/misc.xml[m
+[1mdeleted file mode 100644[m
+[1mindex e9710cf..0000000[m
+[1m--- a/.idea/misc.xml[m
+[1m+++ /dev/null[m
+[36m@@ -1,6 +0,0 @@[m
+[31m-<?xml version="1.0" encoding="UTF-8"?>[m
+[31m-<project version="4">[m
+[31m-  <component name="ProjectRootManager" version="2" project-jdk-name="openjdk-24" project-jdk-type="JavaSDK">[m
+[31m-    <output url="file://$PROJECT_DIR$/out" />[m
+[31m-  </component>[m
+[31m-</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/modules.xml b/.idea/modules.xml[m
+[1mdeleted file mode 100644[m
+[1mindex e7763c5..0000000[m
+[1m--- a/.idea/modules.xml[m
+[1m+++ /dev/null[m
+[36m@@ -1,8 +0,0 @@[m
+[31m-<?xml version="1.0" encoding="UTF-8"?>[m
+[31m-<project version="4">[m
+[31m-  <component name="ProjectModuleManager">[m
+[31m-    <modules>[m
+[31m-      <module fileurl="file://$PROJECT_DIR$/lab1.iml" filepath="$PROJECT_DIR$/lab1.iml" />[m
+[31m-    </modules>[m
+[31m-  </component>[m
+[31m-</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/vcs.xml b/.idea/vcs.xml[m
+[1mdeleted file mode 100644[m
+[1mindex 94a25f7..0000000[m
+[1m--- a/.idea/vcs.xml[m
+[1m+++ /dev/null[m
+[36m@@ -1,6 +0,0 @@[m
+[31m-<?xml version="1.0" encoding="UTF-8"?>[m
+[31m-<project version="4">[m
+[31m-  <component name="VcsDirectoryMappings">[m
+[31m-    <mapping directory="$PROJECT_DIR$" vcs="Git" />[m
+[31m-  </component>[m
+[31m-</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/README.md b/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f86603c[m
+[1m--- /dev/null[m
+[1m+++ b/README.md[m
+[36m@@ -0,0 +1,2 @@[m
+[32m+[m[32m# Java_Lab1[m
+[32m+[m[32mJava Lab1 of Gizzatullin Azat[m
+[1mdiff --git a/lab1.iml b/lab1.iml[m
+[1mdeleted file mode 100644[m
+[1mindex c90834f..0000000[m
+[1m--- a/lab1.iml[m
+[1m+++ /dev/null[m
+[36m@@ -1,11 +0,0 @@[m
+[31m-<?xml version="1.0" encoding="UTF-8"?>[m
+[31m-<module type="JAVA_MODULE" version="4">[m
+[31m-  <component name="NewModuleRootManager" inherit-compiler-output="true">[m
+[31m-    <exclude-output />[m
+[31m-    <content url="file://$MODULE_DIR$">[m
+[31m-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />[m
+[31m-    </content>[m
+[31m-    <orderEntry type="inheritedJdk" />[m
+[31m-    <orderEntry type="sourceFolder" forTests="false" />[m
+[31m-  </component>[m
+[31m-</module>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/Lab1.java b/src/Lab1.java[m
+[1mdeleted file mode 100644[m
+[1mindex 442ce15..0000000[m
+[1m--- a/src/Lab1.java[m
+[1m+++ /dev/null[m
+[36m@@ -1,450 +0,0 @@[m
+[31m-import java.io.IOException;[m
+[31m-import java.util.Scanner;[m
+[31m-import java.util.Random;[m
+[31m-[m
+[31m-public class Lab1 {[m
+[31m-    /* Exercise 1 */[m
+[31m-[m
+[31m-    // 1 - getting only the fractional part[m
+[31m-    public double fraction (double x) {[m
+[31m-        return  x - (int) x;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 2 - sum of the last two digits[m
+[31m-    public int sumLastNums (int x) {[m
+[31m-        return x/10%10 + x%10;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 3 - getting number from char[m
+[31m-    public int charToNum (char x) {[m
+[31m-        return x - '0';[m
+[31m-    }[m
+[31m-[m
+[31m-    // 4 - is the number positive[m
+[31m-    public boolean isPositive (int x) {[m
+[31m-        return x > 0;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 5 - does it have only two digits[m
+[31m-    public boolean is2Digits (int x) {[m
+[31m-        return x / 100 == 0;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 6 - is the char uppercase (using ascii to determine)[m
+[31m-    public boolean isUpperCase (char x) {[m
+[31m-        return 65 <= x && x <= 90;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 7 - is num in the range between a and b or b and a[m
+[31m-    public boolean isInRange (int a, int b, int num) {[m
+[31m-        return (a <= num && num <= b) || (b <= num && num <= a);[m
+[31m-    }[m
+[31m-[m
+[31m-    // 8 - is the one number evenly divisible to other[m
+[31m-    public boolean isDivisor (int a, int b) {[m
+[31m-        return (a == (a / b) * b) || (b == (b / a) * a);[m
+[31m-    }[m
+[31m-    // 9 - are these 3 numbers equal to each other[m
+[31m-    public boolean isEqual(int a, int b, int c) {[m
+[31m-        return a == b && b == c;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 10 - consequential sum of the last digits of some numbers[m
+[31m-    public int lastNumSum(int a, int b) {[m
+[31m-        return Math.abs(a % 10) + Math.abs(b % 10);[m
+[31m-    }[m
+[31m-[m
+[31m-[m
+[31m-    /* Exercise 2 */[m
+[31m-[m
+[31m-    // 1 - explicit ABS implementation[m
+[31m-    public int abs (int x) {[m
+[31m-        if (x >= 0) return x;[m
+[31m-        else return -x;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 2 - safe division by zero[m
+[31m-    public double safeDiv (int x, int y) {[m
+[31m-        if (y == 0) return 0;[m
+[31m-        else return (double) x / y;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 3 - returning true if divisible by exactly one of: 5 or 7[m
+[31m-    public boolean is35 (int x) {[m
+[31m-        return (x % 5 == 0) != (x % 7 == 0);[m
+[31m-    }[m
+[31m-    // 4 - comparing two numbers by returning a string with > or < or == between them[m
+[31m-    public String makeDecision (int x, int y) {[m
+[31m-        if (x > y) return (x + " > " + y);[m
+[31m-        if (x == y) return (x + " == " + y);[m
+[31m-        else return (x + " < " + y);[m
+[31m-    }[m
+[31m-[m
+[31m-    // 5 - getting the max number with only 2 not nested if statements[m
+[31m-    public int max3 (int x, int y, int z) {[m
+[31m-        if (x >= y && x >= z) return x;[m
+[31m-        else if (y >= x && y >= z) return y;[m
+[31m-        else return z;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 6 - checking if any two numbers add up to the third number[m
+[31m-    public boolean sum3 (int x, int y, int z) {[m
+[31m-        return (x + y == z || x + z == y || y + z == x);[m
+[31m-    }[m
+[31m-[m
+[31m-    // 7 - if the sum is 10-19 returning 20, otherwise returning the sum[m
+[31m-    public int sum2 (int x, int y) {[m
+[31m-        if (x + y >= 10 && x + y <= 19) return 20;[m
+[31m-        else return x + y;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 8 - returning the Russian word "год" in correct grammatical form for the given number[m
+[31m-    public String age (int x) {[m
+[31m-        if (x % 100 >= 11 && x % 100 <= 14) return (x + " лет");[m
+[31m-        return switch (x % 10) {[m
+[31m-            case 1 -> x + " год";[m
+[31m-            case 2, 3, 4 -> x + " года";[m
+[31m-            default -> x + " лет";[m
+[31m-        };[m
+[31m-    }[m
+[31m-[m
+[31m-    // 9 - returning the Russian weekday name for the given day number (1-7)[m
+[31m-    public String day (int x) {[m
+[31m-        return switch (x) {[m
+[31m-            case 1 -> "понедельник";[m
+[31m-            case 2 -> "вторник";[m
+[31m-            case 3 -> "среда";[m
+[31m-            case 4 -> "четверг";[m
+[31m-            case 5 -> "пятница";[m
+[31m-            case 6 -> "суббота";[m
+[31m-            case 7 -> "воскресенье";[m
+[31m-            default -> "это не день недели";[m
+[31m-        };[m
+[31m-    }[m
+[31m-[m
+[31m-    // 10 - prints week days in russian from specified by number day onward[m
+[31m-    public void printDays (String x) {[m
+[31m-        int n;[m
+[31m-        switch (x) {[m
+[31m-            case "понедельник" -> n = 1;[m
+[31m-            case "вторник" -> n = 2;[m
+[31m-            case "среда" -> n = 3;[m
+[31m-            case "четверг" -> n = 4;[m
+[31m-            case "пятница" -> n = 5;[m
+[31m-            case "суббота" -> n = 6;[m
+[31m-            case "воскресенье" -> n = 7;[m
+[31m-            default -> n = -1;[m
+[31m-        }[m
+[31m-[m
+[31m-        // assuming I already know how to use for loops[m
+[31m-        String[] days = {"понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"};[m
+[31m-        if (n == -1) {[m
+[31m-            System.out.println("это не день недели");[m
+[31m-            return;[m
+[31m-        }[m
+[31m-        for (int i = n - 1; i < days.length; i++) {[m
+[31m-            System.out.println(days[i]);[m
+[31m-        }[m
+[31m-    }[m
+[31m-[m
+[31m-[m
+[31m-    /* Exercise 3 */[m
+[31m-[m
+[31m-    // 1 - returning String numbers from 0 to x (including x)[m
+[31m-    public String listNums (int x) {[m
+[31m-        String result = "0";[m
+[31m-        for (int i = 1; i <= x; i++) {[m
+[31m-            result += " " + i;[m
+[31m-        }[m
+[31m-        return result;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 2 - returning String of numbers from x to 0 (including 0)[m
+[31m-    public String reverseListNums (int x) {[m
+[31m-        String result = String.valueOf(x);[m
+[31m-        for (int i = x - 1; i >= 0; i--) {[m
+[31m-            result += " " + i;[m
+[31m-        }[m
+[31m-        return result;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 3 - returning String of even numbers from 0 to x (including x)[m
+[31m-    public String chet (int x) {[m
+[31m-        String result = "0";[m
+[31m-        for (int i = 2; i <= x; i += 2) {[m
+[31m-            result += " " + i;[m
+[31m-        }[m
+[31m-        return result;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 4 - implementing the manual way of x^y without Math.pow[m
+[31m-    public int pow (int x, int y) {[m
+[31m-        int result = 1;[m
+[31m-        for (int i = 0; i < y; i++) {[m
+[31m-            result *= x;[m
+[31m-        }[m
+[31m-        return result;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 5 - getting the length of a number[m
+[31m-    public int numLen (long x) {[m
+[31m-        int count = 1;[m
+[31m-        while (Math.abs(x) > 9) {[m
+[31m-            x /= 10;[m
+[31m-            count++;[m
+[31m-        }[m
+[31m-        return count;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 6 - checking if a number has the same digits[m
+[31m-    public boolean equalNum (int x) {[m
+[31m-        int lastDigit = x % 10;[m
+[31m-[m
+[31m-        while (abs(x) > 0) {[m
+[31m-            if (x % 10 != lastDigit) return false;[m
+[31m-            x /= 10;[m
+[31m-        }[m
+[31m-        return true;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 7 - printing out a square of x size of '*'[m
+[31m-    public void square (int x) {[m
+[31m-        for (int i = 0; i < x; i++) {[m
+[31m-            for (int j = 0; j < x; j++) {[m
+[31m-                System.out.print('*');[m
+[31m-            }[m
+[31m-            System.out.print('\n');[m
+[31m-        }[m
+[31m-    }[m
+[31m-[m
+[31m-    // 8 - printing out a left triangle of x size of '*'[m
+[31m-    public void leftTriangle (int x) {[m
+[31m-        for (int i = 1; i <= x; i++) {[m
+[31m-            for (int j = 1; j <= i; j++) {[m
+[31m-                System.out.print('*');[m
+[31m-            }[m
+[31m-            System.out.print('\n');[m
+[31m-        }[m
+[31m-    }[m
+[31m-[m
+[31m-    // 9 - printing out a right triangle from '*' of x size[m
+[31m-    public void rightTriangle (int x) {[m
+[31m-        for (int i = 1; i <= x; i++) {[m
+[31m-            for (int j = x - i; j > 0; j--) {[m
+[31m-                System.out.print(' ');[m
+[31m-            }[m
+[31m-            for (int k = 0; k < i; k++) {[m
+[31m-                System.out.print('*');[m
+[31m-            }[m
+[31m-            System.out.print('\n');[m
+[31m-        }[m
+[31m-    }[m
+[31m-[m
+[31m-    // 10 - guess the number from 0 to 9 game[m
+[31m-    public void guessGame() {[m
+[31m-        Random random = new Random();[m
+[31m-        int target = random.nextInt(10);  // 0 to 9 inclusive[m
+[31m-        boolean guessedRight = false;[m
+[31m-        int attemptsToGuess = 1;[m
+[31m-        Scanner scanner = new Scanner(System.in);[m
+[31m-[m
+[31m-        while (!guessedRight) {[m
+[31m-            try {[m
+[31m-                System.out.print("Enter your guess: ");[m
+[31m-                int guess = scanner.nextInt();[m
+[31m-[m
+[31m-                if (guess == target) {[m
+[31m-                    guessedRight = true;[m
+[31m-                    System.out.println("\uD83C\uDF89 Correct! The number was " + target);[m
+[31m-                    if (attemptsToGuess == 1) {[m
+[31m-                        System.out.println("It took you only 1 attempt!");[m
+[31m-                    }[m
+[31m-                    else {[m
+[31m-                        System.out.println("It took you " + attemptsToGuess + " attempts");[m
+[31m-                    }[m
+[31m-                    break;[m
+[31m-                }[m
+[31m-                if (guess < 0 || guess > 9) {[m
+[31m-                    System.out.println("Please, enter a single digit (0-9)");[m
+[31m-                }[m
+[31m-                else {[m
+[31m-                    System.out.println("Wrong number!");[m
+[31m-                    attemptsToGuess++;[m
+[31m-                }[m
+[31m-            } catch (Exception e) {[m
+[31m-                System.out.println("Error reading input. Please try again.");[m
+[31m-                scanner.next();[m
+[31m-            }[m
+[31m-        }[m
+[31m-        scanner.close();[m
+[31m-    }[m
+[31m-[m
+[31m-[m
+[31m-    /* Exercise 4 */[m
+[31m-[m
+[31m-    // 0 - NOT A TASK (my own method). Printing out an array of Integers[m
+[31m-    public void printIntArray (int[] array) {[m
+[31m-        while (true) {[m
+[31m-            try {[m
+[31m-                System.out.print("[" + array[0]);[m
+[31m-                for (int i = 1; i < array.length; i++) {[m
+[31m-                    System.out.print("; " + array[i]);[m
+[31m-                }[m
+[31m-                System.out.print("]" + '\n');[m
+[31m-                break;[m
+[31m-            } catch (Exception e) {[m
+[31m-                System.out.println("The array is empty!");[m
+[31m-                break;[m
+[31m-            }[m
+[31m-        }[m
+[31m-    }[m
+[31m-[m
+[31m-    // 1 - getting the index of the first found x in the array[m
+[31m-    public int findFirst (int[] arr, int x) {[m
+[31m-        int count = 0;[m
+[31m-        for (int num : arr) {[m
+[31m-            if (x == num) {[m
+[31m-                return count;[m
+[31m-            }[m
+[31m-            else {[m
+[31m-                count++;[m
+[31m-            }[m
+[31m-        }[m
+[31m-        return -1;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 2 - getting the index of the last found x in the array[m
+[31m-    public int findLast (int[] arr, int x) {[m
+[31m-        int count = arr.length - 1;[m
+[31m-        for (int num = arr.length - 1; num >= 0; num--) {[m
+[31m-            if (x == arr[num]) {[m
+[31m-                return count;[m
+[31m-            }[m
+[31m-            else {[m
+[31m-                count--;[m
+[31m-            }[m
+[31m-        }[m
+[31m-        return -1;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 3 - getting the number with the maximum absolute value in the array[m
+[31m-    public int maxAbs (int[] arr) {[m
+[31m-        int max = arr[0];[m
+[31m-        for (int num : arr) {[m
+[31m-            if (Math.abs(num) > Math.abs(max)) max = num;[m
+[31m-        }[m
+[31m-        return max;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 4 - inserting a number at the specified index in the array[m
+[31m-    public int[] add (int[] arr, int x, int pos) {[m
+[31m-        int[] newArr = new int[arr.length + 1];[m
+[31m-[m
+[31m-        // copying elements before the insertion point[m
+[31m-        for (int i = 0; i < pos; i++) {[m
+[31m-            newArr[i] = arr[i];[m
+[31m-        }[m
+[31m-        newArr[pos] = x; // inserting a new number[m
+[31m-        // copying elements after the insertion point[m
+[31m-        for (int i = pos; i < newArr.length - 1; i++) {[m
+[31m-            newArr[i + 1] = arr[i];[m
+[31m-        }[m
+[31m-[m
+[31m-        return newArr;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 5 - inserting a new array (ins) at the specified index in the array (arr)[m
+[31m-    public int[] add (int[] arr, int[] ins, int pos) {[m
+[31m-        int[] newArr = new int[arr.length + ins.length];[m
+[31m-[m
+[31m-        // copying elements before the insertion point[m
+[31m-        for (int i = 0; i < pos; i++) {[m
+[31m-            newArr[i] = arr[i];[m
+[31m-        }[m
+[31m-        // inserting the new array[m
+[31m-        for (int i = 0; i < ins.length; i ++) {[m
+[31m-            newArr[i + pos] = ins[i];[m
+[31m-        }[m
+[31m-        // copying elements after the insertion point[m
+[31m-        for (int i = pos; i < arr.length; i++) {[m
+[31m-            newArr[i + ins.length] = arr[i];[m
+[31m-        }[m
+[31m-[m
+[31m-        return newArr;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 6 - reversing the array[m
+[31m-    public void reverse (int[] arr) {[m
+[31m-        for (int i = 0; i < arr.length / 2; i++){[m
+[31m-            int temp = arr[i];[m
+[31m-            arr[i] = arr[arr.length - 1 - i];[m
+[31m-            arr[arr.length - 1 - i] = temp;[m
+[31m-        }[m
+[31m-    }[m
+[31m-[m
+[31m-    // 7 - return the reversed array[m
+[31m-    public int[] reverseBack (int[] arr) {[m
+[31m-        for (int i = 0; i < arr.length / 2; i++){[m
+[31m-            int temp = arr[i];[m
+[31m-            arr[i] = arr[arr.length - 1 - i];[m
+[31m-            arr[arr.length - 1 - i] = temp;[m
+[31m-        }[m
+[31m-        return arr;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 8 - merging (concatenating) two arrays[m
+[31m-    public int[] concat (int[] arr1,int[] arr2) {[m
+[31m-        int[] newArr = new int[arr1.length + arr2.length];[m
+[31m-[m
+[31m-        // inserting the first array[m
+[31m-        for (int i = 0; i < arr1.length; i++) {[m
+[31m-            newArr[i] = arr1[i];[m
+[31m-        }[m
+[31m-        // inserting the second array[m
+[31m-        for (int i = arr1.length; i < newArr.length; i++) {[m
+[31m-            newArr[i] = arr2[i - arr1.length];[m
+[31m-        }[m
+[31m-        return newArr;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 9 - getting the array of indices of every found x in the array[m
+[31m-    public int[] findAll (int[] arr, int x) {[m
+[31m-        int count = 0;[m
+[31m-        for (int num : arr) {[m
+[31m-            if (num == x) {[m
+[31m-                count++;[m
+[31m-            }[m
+[31m-        }[m
+[31m-        int[] indices = new int[count];[m
+[31m-        int index = 0;[m
+[31m-        for (int i = 0; i < arr.length; i++) {[m
+[31m-            if (arr[i] == x) {[m
+[31m-                indices[index] = i;[m
+[31m-                index++;[m
+[31m-            }[m
+[31m-        }[m
+[31m-[m
+[31m-        return indices;[m
+[31m-    }[m
+[31m-[m
+[31m-    // 10 - removing all the negative numbers from the array[m
+[31m-    public int[] deleteNegative (int[] arr) {[m
+[31m-        int count = 0;[m
+[31m-        for (int num : arr) {[m
+[31m-            if (num >= 0) {[m
+[31m-                count++;[m
+[31m-            }[m
+[31m-        }[m
+[31m-        int[] newArr = new int[count];[m
+[31m-        int index = 0;[m
+[31m-        for (int num : arr) {[m
+[31m-            if (num >= 0) {[m
+[31m-                newArr[index] = num;[m
+[31m-                index++;[m
+[31m-            }[m
+[31m-        }[m
+[31m-[m
+[31m-        return newArr;[m
+[31m-    }[m
+[31m-}[m
+[31m-[m
+[1mdiff --git a/src/Main.java b/src/Main.java[m
+[1mdeleted file mode 100644[m
+[1mindex a19bf88..0000000[m
+[1m--- a/src/Main.java[m
+[1m+++ /dev/null[m
+[36m@@ -1,384 +0,0 @@[m
+[31m-public class Main {[m
+[31m-    public static void main(String[] args) {[m
+[31m-        /* initializing a lab1 object in order to use methods from Lab1.java file*/[m
+[31m-        Lab1 lab1 = new Lab1();[m
+[31m-[m
+[31m-        [m
+[31m-        /* Exercise 1 */[m
+[31m-        System.out.println("Exercise 1: Methods");[m
+[31m-[m
+[31m-        // Task 1[m
+[31m-        System.out.println('\n' + "- task 1: getting only the fractional part");[m
+[31m-        double number1 = 1.2489;[m
+[31m-        double number2 = Math.E;[m
+[31m-        System.out.printf("Number: %.4f → Fractional part: %.4f%n", number1, lab1.fraction(number1));[m
+[31m-        System.out.printf("Math.E: %.10f → Fractional part: %.10f%n", number2, lab1.fraction(number2));[m
+[31m-[m
+[31m-        // Task 2[m
+[31m-        System.out.println('\n' + "- task 2: getting the sum of the last two digits");[m
+[31m-        int number3 = 1449;[m
+[31m-        System.out.println("Number: " + number3 + " → resulted sum: "+ lab1.sumLastNums(number3));[m
+[31m-[m
+[31m-        // Task 3[m
+[31m-        System.out.println('\n' + "- task 3: turning a char from 0-9 to number");[m
+[31m-        char digit = '2';[m
+[31m-        System.out.println("Char: " + digit + " → number from it: " + lab1.charToNum(digit));[m
+[31m-[m
+[31m-        // Task 4[m
+[31m-        System.out.println('\n' + "- task 4: checking if the number is positive");[m
+[31m-        int negativeNumber = -54;[m
+[31m-        int positiveNumber = 17;[m
+[31m-        System.out.println("Number 1: " + positiveNumber + " The result: " + lab1.isPositive(positiveNumber));[m
+[31m-        System.out.println("Number 2: " + negativeNumber + " The result: " + lab1.isPositive(negativeNumber));[m
+[31m-[m
+[31m-        // Task 5[m
+[31m-        System.out.println('\n' + "- task 5: checking if the number has only 2 digits");[m
+[31m-        int num1 = 52;[m
+[31m-        int num2 = 144;[m
+[31m-        int num3 = -44;[m
+[31m-        int num4 = -100;[m
+[31m-        System.out.println("Number 1: " + num1 + " The result: " + lab1.is2Digits(num1));[m
+[31m-        System.out.println("Number 2: " + num2 + " The result: " + lab1.is2Digits(num2));[m
+[31m-        System.out.println("Number 3: " + num3 + " The result: " + lab1.is2Digits(num3));[m
+[31m-        System.out.println("Number 4: " + num4 + " The result: " + lab1.is2Digits(num4));[m
+[31m-[m
+[31m-        // Task 6[m
+[31m-        System.out.println('\n' + "- task 6: checking if the char is uppercase via ASCII");[m
+[31m-        char char1 = '@';[m
+[31m-        char char2 = '\\';[m
+[31m-        char char3 = 'A';[m
+[31m-        char char4 = 'Z';[m
+[31m-        System.out.println("Char 1: " + char1 + " The result: " + lab1.isUpperCase(char1));[m
+[31m-        System.out.println("Char 2: " + char2 + " The result: " + lab1.isUpperCase(char2));[m
+[31m-        System.out.println("Char 3: " + char3 + " The result: " + lab1.isUpperCase(char3));[m
+[31m-        System.out.println("Char 4: " + char4 + " The result: " + lab1.isUpperCase(char4));[m
+[31m-[m
+[31m-        // Task 7[m
+[31m-        System.out.println('\n' + "- task 7: checking if the num is in the range between a and b or b and a");[m
+[31m-        int a1 = 5;[m
+[31m-        int b1 = 1;[m
+[31m-        num1 = 3;[m
+[31m-        int a2 = 17;[m
+[31m-        int b2 = 53;[m
+[31m-        num2 = 17;[m
+[31m-        int a3 = 10;[m
+[31m-        int b3 = 4;[m
+[31m-        num3 = -3;[m
+[31m-        System.out.println("a = " + a1 + "; b = " + b1 + "; num = " + num1 + "; The result: " + lab1.isInRange(a1,b1, num1));[m
+[31m-        System.out.println("a = " + a2 + "; b = " + b2 + "; num = " + num2 + "; The result: " + lab1.isInRange(a2,b2, num2));[m
+[31m-        System.out.println("a = " + a3 + "; b = " + b3 + "; num = " + num3 + "; The result: " + lab1.isInRange(a3,b3, num3));[m
+[31m-[m
+[31m-        // Task 8[m
+[31m-        System.out.println('\n' + "- task 8: checking if the one number is evenly divisible to other");[m
+[31m-        a1 = 428;[m
+[31m-        b1 = 4;[m
+[31m-        a2 = 21;[m
+[31m-        b2 = 6;[m
+[31m-        System.out.println("a = " + a1 + "; b = " + b1 + "; The result: " + lab1.isDivisor(a1,b1));[m
+[31m-        System.out.println("a = " + a2 + "; b = " + b2 + "; The result: " + lab1.isDivisor(a2,b2));[m
+[31m-[m
+[31m-        // Task 9[m
+[31m-        System.out.println('\n' + "- task 9: checking if 3 numbers are equal to each other ");[m
+[31m-        a1 = 5;[m
+[31m-        a2 = 5;[m
+[31m-        a3 = 5;[m
+[31m-        b1 = 94;[m
+[31m-        b2 = -94;[m
+[31m-        b3 = 32;[m
+[31m-        System.out.println("Are they equal: [" + a1 + "; " + a2 + "; " + a3 + "]; The result: " + lab1.isEqual(a1,a2,a3));[m
+[31m-        System.out.println("Are they equal: [" + b1 + "; " + b2 + "; " + b3 + "]; The result: " + lab1.isEqual(b1,b2,b3));[m
+[31m-[m
+[31m-        // Task 10[m
+[31m-        System.out.println('\n' + "- task 10: consequentially getting the sum of the last digits of some numbers");[m
+[31m-        int result = lab1.lastNumSum(12, 7);  // 12%10 + 7%10 = 2 + 7 = 9[m
+[31m-        result = lab1.lastNumSum(result, -52);  // 9%10 + |-52%10| = 9 + |2| = 11  // calculating absolute value[m
+[31m-        result = lab1.lastNumSum(result, 79);  // 11%10 + 79%10 = 1 + 9 = 10[m
+[31m-        result = lab1.lastNumSum(result, 132);  // 10%10 + 132%10 = 0 + 2 = 2[m
+[31m-        System.out.println("The result: " + result);  // The result = 2[m
+[31m-[m
+[31m-[m
+[31m-        /* Exercise 2 */[m
+[31m-        System.out.println('\n' + '\n' + "Exercise 2: Conditions");[m
+[31m-[m
+[31m-        // Task 1[m
+[31m-        System.out.println('\n' + "- task 1: checking the explicit abs implementation");[m
+[31m-        num1 = -24;[m
+[31m-        num2 = 12;[m
+[31m-        System.out.println("Number 1: " + num1 + " The result: " + lab1.abs(num1));[m
+[31m-        System.out.println("Number 1: " + num2 + " The result: " + lab1.abs(num2));[m
+[31m-[m
+[31m-        // Task 2[m
+[31m-        System.out.println('\n' + "- task 2: checking the method for preventing the division by zero");[m
+[31m-        a1 = -42;[m
+[31m-        a2 = 0;[m
+[31m-        b1 = 21;[m
+[31m-        b2 = 2;[m
+[31m-        System.out.println(a1 + " / " + a2 + " = " + lab1.safeDiv(a1,a2));[m
+[31m-        System.out.println(b1 + " / " + b2 + " = " + lab1.safeDiv(b1,b2));[m
+[31m-[m
+[31m-        // Task 3[m
+[31m-        System.out.println('\n' + "- task 3: returning true if divisible by exactly one of: 5 or 7");[m
+[31m-        a1 = 14; // divisible only by 7[m
+[31m-        a2 = 25; // divisible only by 5[m
+[31m-        a3 = 35; // divisible by 5 and by 7[m
+[31m-        int a4 = 16; // divisible not by 5 and not by 7[m
+[31m-        System.out.println("Number: " + a1 + " The result: " + lab1.is35(a1));[m
+[31m-        System.out.println("Number: " + a2 + " The result: " + lab1.is35(a2));[m
+[31m-        System.out.println("Number: " + a3 + " The result: " + lab1.is35(a3));[m
+[31m-        System.out.println("Number: " + a4 + " The result: " + lab1.is35(a4));[m
+[31m-[m
+[31m-        // Task 4[m
+[31m-        System.out.println('\n' + "- task 4: comparing two numbers and getting the string");[m
+[31m-        a1 = 12;[m
+[31m-        a2 = 23;[m
+[31m-        b1 = 4;[m
+[31m-        b2 = -90;[m
+[31m-        int c1 = 8;[m
+[31m-        int c2 = 8;[m
+[31m-        System.out.println("[" + a1 + "; " + a2 + "]  →  " + lab1.makeDecision(a1, a2));[m
+[31m-        System.out.println("[" + b1 + "; " + b2 + "]  →  " + lab1.makeDecision(b1, b2));[m
+[31m-        System.out.println("[" + c1 + "; " + c2 + "]  →  " + lab1.makeDecision(c1, c2));[m
+[31m-[m
+[31m-        // Task 5[m
+[31m-        System.out.println('\n' + "- task 5: getting the max number between the 3");[m
+[31m-        a1 = 5;[m
+[31m-        a2 = 7;[m
+[31m-        a3 = 7;[m
+[31m-        b1 = 8;[m
+[31m-        b2 = -1;[m
+[31m-        b3 = 4;[m
+[31m-        System.out.println("[" + a1 + "; " + a2 + "; " + a3 + "]  max number is " + lab1.max3(a1, a2, a3));[m
+[31m-        System.out.println("[" + b1 + "; " + b2 + "; " + b3 + "]  max number is " + lab1.max3(b1, b2, b3));[m
+[31m-[m
+[31m-        // Task 6[m
+[31m-        System.out.println('\n' + "- task 6: checking if any two numbers add up to the third number");[m
+[31m-        a1 = 5;[m
+[31m-        a2 = 7;[m
+[31m-        a3 = 2;[m
+[31m-        b1 = 8;[m
+[31m-        b2 = -1;[m
+[31m-        b3 = 4;[m
+[31m-        System.out.println("[" + a1 + "; " + a2 + "; " + a3 + "]  the result: " + lab1.sum3(a1, a2, a3));[m
+[31m-        System.out.println("[" + b1 + "; " + b2 + "; " + b3 + "]  the result: " + lab1.sum3(b1, b2, b3));[m
+[31m-[m
+[31m-        // Task 7[m
+[31m-        System.out.println('\n' + "- task 7: if the sum is 10-19 returning 20, otherwise returning the sum");[m
+[31m-        a1 = 5;[m
+[31m-        a2 = 7;[m
+[31m-        b1 = 8;[m
+[31m-        b2 = -1;[m
+[31m-        System.out.println("[" + a1 + "; " + a2 + "]  the result: " + lab1.sum2(a1, a2));[m
+[31m-        System.out.println("[" + b1 + "; " + b2 + "]  the result: " + lab1.sum2(b1, b2));[m
+[31m-[m
+[31m-        // Task 8[m
+[31m-        System.out.println('\n' + "- task 8: returning the Russian word \"год\" in correct grammatical form for the given number");[m
+[31m-        a1 = 5;[m
+[31m-        a2 = 31;[m
+[31m-        a3 = 44;[m
+[31m-        System.out.println(a1 + "  the result: " + lab1.age(a1));[m
+[31m-        System.out.println(a2 + "  the result: " + lab1.age(a2));[m
+[31m-        System.out.println(a3 + "  the result: " + lab1.age(a3));[m
+[31m-[m
+[31m-        // Task 9[m
+[31m-        System.out.println('\n' + "- task 9: returning the Russian weekday name for the given day number (1-7)");[m
+[31m-        a1 = 5;[m
+[31m-        a2 = 31;[m
+[31m-        a3 = 3;[m
+[31m-        System.out.println(a1 + "  the result: " + lab1.day(a1));[m
+[31m-        System.out.println(a2 + "  the result: " + lab1.day(a2));[m
+[31m-        System.out.println(a3 + "  the result: " + lab1.day(a3));[m
+[31m-[m
+[31m-        // Task 10[m
+[31m-        System.out.println('\n' + "- task 10: getting week days in russian from specified by number day onward");[m
+[31m-        String x1 = "четверг";[m
+[31m-        String x2 = "Пт";[m
+[31m-        System.out.println("Input: " + x1 + ";  the result: ");[m
+[31m-        lab1.printDays(x1);[m
+[31m-        System.out.println('\n' + "Input: " + x2 + ";  the result: ");[m
+[31m-        lab1.printDays(x2);[m
+[31m-[m
+[31m-[m
+[31m-        /* Exercise 3 */[m
+[31m-        System.out.println('\n' + '\n' + "Exercise 3: Iteration (for & while)");[m
+[31m-[m
+[31m-        // Task 1[m
+[31m-        System.out.println('\n' + "- task 1: getting numbers from 0 to x");[m
+[31m-        int num = 11;[m
+[31m-        System.out.println("x: " + num + "\nthe result: " + lab1.listNums(num));[m
+[31m-[m
+[31m-        // Task 2[m
+[31m-        System.out.println('\n' + "- task 2: getting numbers from x to 0");[m
+[31m-        num = 6;[m
+[31m-        System.out.println("x: " + num + "\nthe result: " + lab1.reverseListNums(num));[m
+[31m-[m
+[31m-        // Task 3[m
+[31m-        System.out.println('\n' + "- task 3: getting even numbers from 0 to x");[m
+[31m-        num = 11;[m
+[31m-        System.out.println("x: " + num + "\nthe result: " + lab1.chet(num));[m
+[31m-[m
+[31m-        // Task 4[m
+[31m-        System.out.println('\n' + "- task 4: calculating x^y manually ");[m
+[31m-        int x = -2;[m
+[31m-        int y = 3;[m
+[31m-        System.out.println(x + "^" + y + "\nthe result: " + lab1.pow(x, y));[m
+[31m-[m
+[31m-        // Task 5[m
+[31m-        System.out.println('\n' + "- task 5: getting the length of a number");[m
+[31m-        num1 = 92556;[m
+[31m-        num2 = -11;[m
+[31m-        System.out.println(num1 + "  the result: " + lab1.numLen(num1));[m
+[31m-        System.out.println(num2 + "  the result: " + lab1.numLen(num2));[m
+[31m-[m
+[31m-        // Task 6[m
+[31m-        System.out.println('\n' + "- task 6: checking if a number has the same digits");[m
+[31m-        num1 = -33;[m
+[31m-        num2 = 5555;[m
+[31m-        num3 = -2245;[m
+[31m-        System.out.println(num1 + "  the result: " + lab1.equalNum(num1));[m
+[31m-        System.out.println(num2 + "  the result: " + lab1.equalNum(num2));[m
+[31m-        System.out.println(num3 + "  the result: " + lab1.equalNum(num3));[m
+[31m-[m
+[31m-        // Task 7[m
+[31m-        System.out.println('\n' + "- task 7: printing out a square of x size of '*'");[m
+[31m-        num1 = 2;[m
+[31m-        num2 = 4;[m
+[31m-        System.out.println("Number: " + num1 + "\nthe result: ");[m
+[31m-        lab1.square(num1);[m
+[31m-        System.out.println("Number: " + num2 + "\nthe result: ");[m
+[31m-        lab1.square(num2);[m
+[31m-[m
+[31m-        // Task 8[m
+[31m-        System.out.println('\n' + "- task 8: printing out a left triangle of x size of '*'");[m
+[31m-        num1 = 2;[m
+[31m-        num2 = 4;[m
+[31m-        System.out.println("Number: " + num1 + "\nthe result: ");[m
+[31m-        lab1.leftTriangle(num1);[m
+[31m-        System.out.println("Number: " + num2 + "\nthe result: ");[m
+[31m-        lab1.leftTriangle(num2);[m
+[31m-[m
+[31m-        // Task 9[m
+[31m-        System.out.println('\n' + "- task 9: printing out a right triangle from '*' of x size");[m
+[31m-        num1 = 2;[m
+[31m-        num2 = 4;[m
+[31m-        System.out.println("Number: " + num1 + "\nthe result: ");[m
+[31m-        lab1.rightTriangle(num1);[m
+[31m-        System.out.println("Number: " + num2 + "\nthe result: ");[m
+[31m-        lab1.rightTriangle(num2);[m
+[31m-[m
+[31m-        // Task 10[m
+[31m-        System.out.println('\n' + "- task 10: guessing a number from 0-9");[m
+[31m-        //lab1.guessGame();[m
+[31m-[m
+[31m-[m
+[31m-        /* Exercise 4 */[m
+[31m-[m
+[31m-        // Task 1[m
+[31m-        System.out.println('\n' + "- task 1: getting the index of the first found x number in an array");[m
+[31m-        int[] arr1 = {1, 2, 3, 4, 2, 2, 5};[m
+[31m-        a1 = 2;[m
+[31m-        a2 = 7;[m
+[31m-[m
+[31m-        System.out.print("Array: ");[m
+[31m-        lab1.printIntArray(arr1);[m
+[31m-[m
+[31m-        System.out.println("index of the first [" + a1 + "] = " + lab1.findFirst(arr1, a1));[m
+[31m-        System.out.println("index of the first [" + a2 + "] = " + lab1.findFirst(arr1, a2));[m
+[31m-[m
+[31m-        // Task 2[m
+[31m-        System.out.println('\n' + "- task 2: getting the index of the last found x number in an array");[m
+[31m-        int[] arr2 = {1, 2, 3, 4, 5, 2, 5, 2};[m
+[31m-        a1 = 5;[m
+[31m-        a2 = 1;[m
+[31m-        a3 = 8;[m
+[31m-[m
+[31m-        System.out.print("Array: ");[m
+[31m-        lab1.printIntArray(arr2);[m
+[31m-[m
+[31m-        System.out.println("index of the last [" + a1 + "] = " + lab1.findLast(arr2, a1));[m
+[31m-        System.out.println("index of the last [" + a2 + "] = " + lab1.findLast(arr2, a2));[m
+[31m-        System.out.println("index of the last [" + a3 + "] = " + lab1.findLast(arr2, a3));[m
+[31m-[m
+[31m-        // Task 3[m
+[31m-        System.out.println('\n' + "- task 3: getting the number with the maximum absolute value in the array");[m
+[31m-        int[] arr3 = {1, -2, -7, 4, 2, 2, 5};[m
+[31m-[m
+[31m-        System.out.print("Array: ");[m
+[31m-        lab1.printIntArray(arr3);[m
+[31m-        System.out.println("The result: " + lab1.maxAbs(arr3));[m
+[31m-[m
+[31m-        // Task 4[m
+[31m-        System.out.println('\n' + "- task 4: inserting a number at the specified index in the array");[m
+[31m-        int[] arr4 = {1, 2, 3, 4, 5};[m
+[31m-        x = 9;[m
+[31m-        int pos = 3;[m
+[31m-[m
+[31m-[m
+[31m-        System.out.print("Initial array: ");[m
+[31m-        lab1.printIntArray(arr4);[m
+[31m-        System.out.println("x = " + x + "; pos = " + pos);[m
+[31m-[m
+[31m-        System.out.print("Result: ");[m
+[31m-        lab1.printIntArray(lab1.add(arr4, x, pos));[m
+[31m-[m
+[31m-        // Task 5[m
+[31m-        System.out.println('\n' + "- task 4: inserting an array at the specified index in the array");[m
+[31m-        int[] arr5 = {1, 2, 3, 4, 5};[m
+[31m-        int[] insertedArr = {7, 8, 9};[m
+[31m-        pos = 3;[m
+[31m-[m
+[31m-[m
+[31m-        System.out.print("Initial array: ");[m
+[31m-        lab1.printIntArray(arr5);[m
+[31m-        System.out.print("To be inserted: ");[m
+[31m-        lab1.printIntArray(insertedArr);[m
+[31m-[m
+[31m-        System.out.print("Result: ");[m
+[31m-        lab1.printIntArray(lab1.add(arr5, insertedArr, pos));[m
+[31m-[m
+[31m-        // Task 6[m
+[31m-        System.out.println('\n' + "- task 6: reversing the array");[m
+[31m-        int[] arr6 = {1, 2, 3, 4, 5};[m
+[31m-        System.out.print("Initial array: ");[m
+[31m-        lab1.printIntArray(arr6);[m
+[31m-        System.out.print("Reversed array: ");[m
+[31m-        lab1.reverse(arr6);[m
+[31m-        lab1.printIntArray(arr6);[m
+[31m-[m
+[31m-        // Task 7[m
+[31m-        System.out.println('\n' + "- task 7: returning the reversed array");[m
+[31m-        int[] arr7 = {1, 2, 3, 4, 5};[m
+[31m-        System.out.print("Initial array: ");[m
+[31m-        lab1.printIntArray(arr7);[m
+[31m-        System.out.print("Reversed array: ");[m
+[31m-        lab1.printIntArray(lab1.reverseBack(arr7));[m
+[31m-[m
+[31m-        // Task 8[m
+[31m-        System.out.println('\n' + "- task 8: merging two arrays");[m
+[31m-        int[] arr8First = {1, 2, 3};[m
+[31m-        int[] arr8Second = {7, 8, 9};[m
+[31m-        System.out.print("First array: ");[m
+[31m-        lab1.printIntArray(arr8First);[m
+[31m-        System.out.print("Second array: ");[m
+[31m-        lab1.printIntArray(arr8Second);[m
+[31m-        System.out.print("The result: ");[m
+[31m-        lab1.printIntArray(lab1.concat(arr8First, arr8Second));[m
+[31m-[m
+[31m-        // Task 9[m
+[31m-        System.out.println('\n' + "- task 9: getting the array of indices of every found x in the array");[m
+[31m-        int[] arr9 = {1, 2, 3, 8, 2, 2, 9};[m
+[31m-        x = 2;[m
+[31m-        System.out.print("Array: ");[m
+[31m-        lab1.printIntArray(arr9);[m
+[31m-        System.out.print("The result: ");[m
+[31m-        lab1.printIntArray(lab1.findAll(arr9, x));[m
+[31m-[m
+[31m-        // Task 10[m
+[31m-        System.out.println('\n' + "- task 10: removing all negative numbers from an array");[m
+[31m-        int[] arr10 = {1, 2, -3, 4, -2, 2, -5};[m
+[31m-[m
+[31m-        System.out.println("Array: ");[m
+[31m-        lab1.printIntArray(arr10);[m
+[31m-        System.out.println("The result: ");[m
+[31m-        lab1.printIntArray(lab1.deleteNegative(arr10));[m
+[31m-    }[m
+[31m-}[m
